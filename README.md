@@ -19,12 +19,6 @@ input/LB-report.pdf ──► extract text ──► Codiv System One ──► 
 input/notes.txt  (no LB- prefix)  ──►  ignored, left untouched
 ```
 
-## What are System One models?
-
-Instead of generating text, a System One model receives a text and a set of **typed questions** (yes/no, pick one option, score on a scale) and answers them in a single pass, returning a **probability for every option**. That makes them fast, cheap, and easy to automate: the output always fits your schema and there is nothing to parse.
-
-This project asks one question, *"What kind of content is this?"*, with three options (`work`, `leisure`, `other`) and acts on the answer.
-
 ## Features
 
 - Only files starting with `LB-` (case-insensitive) trigger processing; everything else is ignored.
