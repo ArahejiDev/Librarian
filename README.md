@@ -2,7 +2,7 @@
   <img src="docs/images/logo.png" alt="Libraria logo" width="160">
 </p>
 
-<h1 align="center">Libraria</h1>
+<h1 align="center">Librarian</h1>
 
 <p align="center"><strong>LB- document classifier</strong> powered by Codiv System One models</p>
 
