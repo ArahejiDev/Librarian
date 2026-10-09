@@ -1,6 +1,12 @@
-# LB- Document Classifier
+<p align="center">
+  <img src="docs/images/logo.png" alt="Libraria logo" width="160">
+</p>
 
-Drop a document whose name starts with `LB-` into a folder and it is classified automatically as **work**, **leisure** or **other** by a [Codiv](https://codiv.ai) *System One* model, then moved to the matching folder. Anything the model is not sure about goes to a manual-review folder instead of being guessed.
+<h1 align="center">Libraria</h1>
+
+<p align="center"><strong>LB- document classifier</strong> powered by Codiv System One models</p>
+
+**Libraria** is a small service: drop a document whose name starts with `LB-` into a folder and it is classified automatically as **work**, **leisure** or **other** by a [Codiv](https://codiv.ai) *System One* model, then moved to the matching folder. Anything the model is not sure about goes to a manual-review folder instead of being guessed.
 
 It runs as a small Python service (systemd on Kali/Debian/Ubuntu) and can be fed remotely over SSH/SCP.
 
@@ -40,8 +46,8 @@ This project asks one question, *"What kind of content is this?"*, with three op
 ## Quick start (Kali / Debian / Ubuntu)
 
 ```bash
-git clone https://github.com/<your-user>/lb-classifier.git
-cd lb-classifier
+git clone https://github.com/<your-user>/Libraria.git
+cd Libraria
 chmod +x install_kali.sh
 sudo ./install_kali.sh
 ```
@@ -258,12 +264,12 @@ If a file with the same name already exists in the destination, a timestamp is a
 ## Project layout
 
 ```
-lb-classifier/
+Libraria/
 ├── lb_classifier.py           # the service
 ├── test_models.py             # compare models on labelled samples
 ├── install_kali.sh            # systemd installer for Kali/Debian/Ubuntu
 ├── upload.ps1                 # upload helper for Windows
 ├── categories.example.json    # example custom categories
 ├── requirements.txt
-└── docs/images/               # screenshots used in this README
+└── docs/images/               # logo and screenshots used in this README
 ```
